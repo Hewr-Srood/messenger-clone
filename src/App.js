@@ -29,7 +29,7 @@ function App() {
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     // setMessages([...messages, { username: username, message: input }]);
-    // setInput('');
+    setInput('');
   };
   const sendMessageOnEnter = (e) => {
     if (e.key === 'Enter') {
