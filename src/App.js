@@ -1,4 +1,4 @@
-import { Button, Input, FormControl, InputLabel, IconButton } from '@material-ui/core';
+import { Input, FormControl, IconButton } from '@material-ui/core';
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Message from './components/Message';
@@ -42,7 +42,12 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>A new Messenger 🔥🔥🔥</h1>
+      <h1>
+        A new Messenger{' '}
+        <span role="img" aria-label="emoji">
+          🔥🔥🔥
+        </span>
+      </h1>
       <h2>Welcome {username}</h2>
 
       <form action="" className="app__form">
